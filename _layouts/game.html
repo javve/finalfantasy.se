@@ -1,0 +1,22 @@
+{% assign collection = site[page.collection] %}
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="game">
+
+    <div class="game-cover" style="background-image:url({{page.cover}});">
+      {% include main-menu.html %}
+    </div>
+
+    {% include menus/game.html collection=collection %}
+
+    {{ content }}
+
+    {% comment %} {% include footer.html %} {% endcomment %}
+
+  </body>
+
+</html>
