@@ -6,11 +6,14 @@
   <body class="start">
 
     <div class="start-cover" style="background-image:url({{page.cover}});">
-      {% include main-menu.html %}
+      {% include menus/main.html %}
     </div>
 
-    {{ content }}
-
+    <div class="content">
+      <article>
+        {{ content }}
+      </article>
+    </div>
   </body>
 
 </html>

@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
+  margin-top:0;
   margin-bottom: $spacing-unit / 2;
 }
 
@@ -158,5 +159,14 @@ pre {
     max-width:     calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
+  }
+}
+.content {
+  box-sizing: border-box;
+  max-width: $content-width;
+  margin:- $spacing-unit auto $spacing-unit;
+  padding: $spacing-unit;
+  @include media-query($on-laptop) {
+    padding:$spacing-unit * 2;
   }
 }

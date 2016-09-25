@@ -4,3 +4,27 @@
   background-position: center;
   height:50vh;
 }
+
+.game-menu {
+  font-size: $large-font-size;
+  border-bottom:solid 1px rgba(0,0,0,.1);
+  margin:0 0 $spacing-unit * 2;
+  padding: 0 0 $spacing-unit / 2;
+  .game-menu-item {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: $spacing-unit;
+  }
+  .game-menu-link {
+    color:$text-color;
+  }
+}
+
+
+
+
+.game {
+  .content {
+    background-color: #F2FAFF;
+  }
+}

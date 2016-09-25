@@ -1,5 +1,7 @@
-{% for page in include.collection %}
-  {% if page.menu_name %}
-    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.menu_name }}</a>
-  {% endif %}
-{% endfor %}
+<ul class="game-menu">
+  {% for page in include.collection %}
+    {% if page.menu_name %}
+      <li class="game-menu-item"><a class="game-menu-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.menu_name }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>

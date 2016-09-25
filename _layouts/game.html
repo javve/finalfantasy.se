@@ -8,12 +8,16 @@
   <body class="game">
 
     <div class="game-cover" style="background-image:url({{page.cover}});">
-      {% include main-menu.html %}
+      {% include menus/main.html %}
     </div>
 
-    {% include menus/game.html collection=collection %}
+    <div class="content">
+      {% include menus/game.html collection=collection %}
 
-    {{ content }}
+      <article>
+        {{ content }}
+      </article>
+    </div>
 
     {% comment %} {% include footer.html %} {% endcomment %}
 

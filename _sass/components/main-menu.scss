@@ -1,0 +1,36 @@
+
+.main-menu-container {
+  box-sizing: border-box;
+  margin:0 auto;
+  max-width: $content-width;
+  padding:$spacing-unit;
+  @include media-query($on-laptop) {
+    padding:$spacing-unit * 2;
+  }
+}
+
+.main-menu {
+  padding:0 0 $spacing-unit / 3;
+  font-size: $large-font-size;
+  border-bottom: solid 1px rgba(255,255,255,.3);
+
+
+  .main-menu-link {
+    color:rgba(255,255,255,.9);
+  }
+  .main-menu-logo {
+    @extend .main-menu-link;
+    font-weight: bold;
+    float: left;
+  }
+  .main-menu-items {
+    text-align: right;
+    margin:0;
+    padding:0;
+  }
+  .main-menu-item {
+    list-style-type: none;
+    display:inline-block;
+    margin-left:20px;
+  }
+}

@@ -5,10 +5,13 @@
 
 // Our variables
 $base-font-family: Lora, Georgia;
-$base-font-size:   16px;
+$base-font-size:   19px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+$large-font-size:  23px;
+$larger-font-size: 33px;
+
 
 $headline-font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $headline-font-weight: 700;
@@ -24,7 +27,7 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    960px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -35,3 +38,5 @@ $on-laptop:        800px;
 @import "layouts/start";
 @import "layouts/game";
 @import "components/highlight";
+@import "components/main-menu";
+@import "components/article";
