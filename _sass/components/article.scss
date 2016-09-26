@@ -1,5 +1,9 @@
 article {
   p:first-child {
     font-size:$larger-font-size;
+    margin-bottom:$spacing-unit * 1.5;
+  }
+  p {
+    margin-bottom:$spacing-unit;
   }
 }

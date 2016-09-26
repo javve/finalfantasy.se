@@ -1,7 +1,9 @@
+{% assign sorted_pages = include.collection | sort:"order" %}
+
 <ul class="game-menu">
-  {% for page in include.collection %}
-    {% if page.menu_name %}
-      <li class="game-menu-item"><a class="game-menu-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.menu_name }}</a></li>
+  {% for menu_page in sorted_pages %}
+    {% if menu_page.menu_name %}
+      <li class="game-menu-item"><a class="game-menu-link {% if page.menu_name  == menu_page.menu_name %}game-menu-link-active{% endif %}" href="{{ menu_page.url | prepend: site.baseurl }}">{{ menu_page.menu_name }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>

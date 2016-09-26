@@ -32,6 +32,11 @@ $content-width:    960px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$z-main-menu: 2;
+$z-game-content: 3;
+$z-game-cover-overlay: 1;
+$z-game-info: 2;
+
 @import "mixins";
 @import "normalize";
 @import "base";

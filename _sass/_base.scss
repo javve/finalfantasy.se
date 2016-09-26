@@ -169,4 +169,20 @@ pre {
   @include media-query($on-laptop) {
     padding:$spacing-unit * 2;
   }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.image-shadow-box {
+  border: solid $spacing-unit / 2 #fff;
+  box-shadow: 5px 10px 40px rgba(0,0,0,.3);
+}
+.image-right-50 {
+  float:right;
+  margin-left:$spacing-unit * 2;
+  margin-bottom:$spacing-unit;
+  max-width: 45%;
 }

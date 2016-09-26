@@ -9,12 +9,20 @@
 
     <div class="game-cover" style="background-image:url({{page.cover}});">
       {% include menus/main.html %}
+
+      <div class="game-info">
+        <h1 class="game-title">{{page.title}}</h1>
+        <p class="game-description">{{page.description}}</p>
+      </div>
+
+      {% if page.overlay %}<div class="game-cover-overlay" style="opacity:{{page.overlay}};"></div>{% endif %}
     </div>
 
     <div class="content">
       {% include menus/game.html collection=collection %}
 
       <article>
+        {{collection.title}}
         {{ content }}
       </article>
     </div>

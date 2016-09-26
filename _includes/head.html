@@ -3,7 +3,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>
+    {% if page.title %}
+      {{ page.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+
+    {% if page.collection == 'xv' %}- Final Fantasy XV{% endif %}
+  </title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
@@ -14,6 +22,23 @@
   <link rel="shortcut icon" href="/images/favicon.png?2" type="image/x-icon" />
 
   <meta property="og:image" content="/images/share-image.jpg" />
+
+  <meta property="fb:app_id" content="1615001515418404" />
+  <meta property="fb:admins" content="591710095,542440070"/>
+  <meta property="og:title" content="{{ copy.shareTitle }}" />
+  <meta property="og:url" content="{{ website }}" />
+  <meta property="og:image" content="{{ shareImage.url1000 }}" />
+  <meta property="og:description" content="{{ copy.shareDescription }}" />
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ copy.shareTitle }}">
+  <meta name="twitter:description" content="{{ copy.shareDescription }}">
+  <meta name="twitter:creator" content="">
+  <meta name="twitter:image:src" content="{{ shareImage.url1000 }}">
+  <meta name="twitter:domain" content="{{ domain }}">
+
+
 
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Roboto:700,900" rel="stylesheet">
   <script src="http://localhost:35729/livereload.js"></script>
