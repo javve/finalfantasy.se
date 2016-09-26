@@ -22,8 +22,9 @@
       {% include menus/game.html collection=collection %}
 
       <article>
-        {{collection.title}}
         {{ content }}
+
+        {% include newsletter.html %}
       </article>
     </div>
 

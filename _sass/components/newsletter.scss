@@ -1,0 +1,29 @@
+.newsletter {
+  border-top: solid 1px rgba(0,0,0,.1);
+  padding-top: $spacing-unit;
+  clear:both;
+  .newsletter-title {
+    font-size:$large-font-size;
+  }
+  label, input, button {
+    float:left;
+    display: block;
+  }
+  input {
+    @include transition(all .2s ease-in-out);
+    width: 40%;
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px rgba(0,0,0,.2);
+    padding: 15px 0;
+    margin-right: 30px;
+    font-size: 22px;
+    &:focus {
+      outline:none;
+      border-bottom-color: rgba(0,0,0,.8);
+    }
+  }
+  button {
+    width: 10%;
+  }
+}

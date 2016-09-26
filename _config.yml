@@ -9,6 +9,7 @@ url: "http://finalfantasy.se" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  javve
 
+permalink: pretty
 markdown: kramdown
 gems:
  - jekyll-coffeescript

@@ -6,6 +6,7 @@ cover: "/images/xv/start/cover.jpg"
 menu_name: Start
 collection: xv
 order: 1
+permalink: /xv/
 ---
 
 Handlingen i Final Fantasy-serien är oftast relativt linjär och detaljerad. Den

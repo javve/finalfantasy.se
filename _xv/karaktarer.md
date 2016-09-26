@@ -2,7 +2,6 @@
 layout: game
 title: Karaktärer
 cover: "/images/xv/characters/cover.jpg"
-menu_name: Karaktärer
 collection: xv
 order: 2
 overlay: .3
