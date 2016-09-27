@@ -1,0 +1,12 @@
+---
+layout: start
+cover: "/assets/images/start/cover.jpg"
+menu_name: Alla
+---
+
+<p>Handlingen i Final Fantasy-serien är oftast relativt linjär och detaljerad. Den
+utspelas i någon form av fantasivärld där magiska kristaller.</p>
+
+{% for game in site.data.games %}
+  <h2>{{game.name}}</h2>
+{% endfor %}
