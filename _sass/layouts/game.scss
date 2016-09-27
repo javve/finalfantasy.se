@@ -1,8 +1,7 @@
 .game-cover {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: center;
+  background-color:#111;
   position: relative;
+  overflow:hidden;
   .game-cover-overlay {
     position: absolute;
     top:0;
@@ -12,6 +11,24 @@
     margin:auto;
     background-color: #000;
     z-index: $z-game-cover-overlay;
+  }
+  .game-cover-image {
+    @include transition(all .4s ease-in-out);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    transform:scale(1.4);
+    opacity:0;
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    z-index: $z-game-cover-image;
+    &.image-ready {
+      opacity:1;
+      transform:scale(1.1);
+    }
   }
 }
 
@@ -62,9 +79,10 @@
 
 
 .game {
-  .content {
+  .content-container {
     position: relative;
-    background-color: #F2FAFF;
     z-index: $z-game-content;
+  }
+  .content {
   }
 }

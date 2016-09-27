@@ -2,7 +2,7 @@
 layout: game
 title: "Final Fantasy XV"
 description: Tio års väntan är äntligen över.
-cover: "/images/xv/start/cover.jpg"
+cover: "/assets/images/xv/start/cover.jpg"
 menu_name: Start
 collection: xv
 order: 1
@@ -12,7 +12,7 @@ permalink: /xv/
 Handlingen i Final Fantasy-serien är oftast relativt linjär och detaljerad. Den
 utspelas i någon form av fantasivärld där magiska kristaller.
 
-![FFXV box](/images/xv/game.jpg){: .image-shadow-box .image-right-50 }
+![FFXV box](/assets/images/xv/game.jpg){: .image-shadow-box .image-right-50 }
 
 Handlingen i Final Fantasy-serien är oftast relativt linjär och detaljerad. Den
 utspelas i någon form av fantasivärld där magiska kristaller, främmande teknologi

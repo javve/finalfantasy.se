@@ -5,17 +5,22 @@
 
   <body class="start">
 
-    <div class="start-cover" style="background-image:url({{page.cover}});">
+    <div class="start-cover">
       {% include menus/main.html %}
+      <div class="start-cover-image" data-image="{{page.cover}}"></div>
     </div>
 
-    <div class="content">
-      <article>
-        {{ content }}
+    <div class="content-container">
+      <div class="content">
+        <article>
+          {{ content }}
 
-        {% include newsletter.html %}
-      </article>
+        </article>
+      </div>
+      {% include newsletter.html %}
     </div>
+
+    {% include footer.html %}
+
   </body>
-
 </html>

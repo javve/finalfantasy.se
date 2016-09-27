@@ -11,6 +11,7 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
+  @include transition(background-color .2s ease-in-out);
 }
 
 
@@ -161,10 +162,15 @@ pre {
     padding-left: $spacing-unit / 2;
   }
 }
-.content {
+
+.content-container {
+  background-color: #fff;
   box-sizing: border-box;
   max-width: $content-width;
   margin:- $spacing-unit auto $spacing-unit;
+}
+.content {
+  @include transition(all .2s ease-in-out);
   padding: $spacing-unit;
   @include media-query($on-laptop) {
     padding:$spacing-unit * 2;

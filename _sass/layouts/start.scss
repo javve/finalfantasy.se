@@ -1,13 +1,16 @@
 .start-cover {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: center;
+  @extend .game-cover;
   height:80vh;
+  .start-cover-image {
+    @extend .game-cover-image;
+  }
 }
 
 
 .start {
-  .content {
-    background-color: #F6ECED;
+  .content-container {
+    position: relative;
+    z-index: $z-game-content;
   }
+  .content {}
 }

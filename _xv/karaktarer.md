@@ -1,7 +1,7 @@
 ---
 layout: game
 title: Karaktärer
-cover: "/images/xv/characters/cover.jpg"
+cover: "/assets/images/xv/characters/cover.jpg"
 collection: xv
 order: 2
 overlay: .3

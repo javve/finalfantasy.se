@@ -1,7 +1,7 @@
 ---
 layout: start
 cover: "/assets/images/start/cover.jpg"
-menu_name: Start
+menu_name: Alla
 ---
 
 Handlingen i Final Fantasy-serien är oftast relativt linjär och detaljerad. Den
