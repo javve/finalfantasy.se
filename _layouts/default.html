@@ -3,12 +3,19 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="default">
 
     {% comment %} {% include header.html %} {% endcomment %}
 
     {{ content }}
 
+    <div class="default-footer">
+      FinalFantasy.se ägs av
+      <a href="http://javve.com" target="_blank">Jonny Strömberg</a> /
+      <a href="https://twitter.com/javve" target="_blank">@javve</a> och illustrationen är gjort av
+      <a href="http://elinorhagg.com/" target="_blank">Elinor Hägg</a> /
+      <a href="https://www.instagram.com/leaveastory/" target="_blank">@leaveastory</>
+    </div>
     {% comment %} {% include footer.html %} {% endcomment %}
 
   </body>
